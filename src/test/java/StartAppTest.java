@@ -49,9 +49,7 @@ public class StartAppTest {
 	@Test
 	public void canStartAppInTest() throws Exception {
 		driver = startApp();
-		Thread.sleep(50000);
-		WebDriverWait wait=new WebDriverWait(driver, 70);
-		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.id("slideNavButton")));
+		Thread.sleep(70000);
 		MobileElement el1 = (MobileElement) driver.findElementById("slideNavButton");
 		el1.click();
 		MobileElement el2 = (MobileElement) driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View/android.widget.ListView/android.view.View[1]/android.view.View");
