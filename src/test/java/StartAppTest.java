@@ -59,7 +59,7 @@ public class StartAppTest {
 		Thread.sleep(5000);
 		MobileElement el2 = (MobileElement) driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View/android.widget.ListView/android.view.View[1]/android.view.View");
 		el2.click();
-		Thread.sleep(5000);
+		Thread.sleep(7000);
 	}
 
 	@After
