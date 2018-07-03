@@ -49,7 +49,7 @@ public class StartAppTest {
 	@Test
 	public void canStartAppInTest() throws Exception {
 		driver = startApp();
-		Thread.sleep(10000);
+		Thread.sleep(50000);
 		WebDriverWait wait=new WebDriverWait(driver, 70);
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.id("slideNavButton")));
 		MobileElement el1 = (MobileElement) driver.findElementById("slideNavButton");
