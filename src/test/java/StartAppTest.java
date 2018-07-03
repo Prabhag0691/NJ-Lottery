@@ -49,7 +49,7 @@ public class StartAppTest {
 	@Test
 	public void canStartAppInTest() throws Exception {
 		driver = startApp();
-		Thread.sleep(5000);
+		Thread.sleep(10000);
 		
 		MobileElement el1 = (MobileElement) driver.findElementById("slideNavButton");
 		el1.click();
