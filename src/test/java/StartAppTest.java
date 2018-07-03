@@ -51,7 +51,7 @@ public class StartAppTest {
 	@Test
 	public void canStartAppInTest() throws Exception {
 		driver = startApp();
-		for(int i=0;i<=1000;i++){
+		for(int i=0;i<=7000;i++){
 		Thread.sleep(5000);
 		//		WebDriverWait wait=new WebDriverWait(driver, 70);
 		//		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.id("slideNavButton")));
