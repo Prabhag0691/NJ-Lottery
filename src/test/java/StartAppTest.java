@@ -51,14 +51,14 @@ public class StartAppTest {
 	@Test
 	public void canStartAppInTest() throws Exception {
 		driver = startApp();
-		for(int i=0;i<=7000;i++){
+		
 		Thread.sleep(5000);
 		//		WebDriverWait wait=new WebDriverWait(driver, 70);
 		//		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.id("slideNavButton")));
 		MobileElement el1 = (MobileElement) driver.findElementById("slideNavButton");
 		el1.click();
-	        System.out.println("Menu button is clicked...");
-		}
+	        driver.label("Menu button is tapping");
+		
 		//Thread.sleep(5000);
 		// MobileElement el2 = (MobileElement) driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View/android.widget.ListView/android.view.View[1]/android.view.View");
 		// el2.click();
