@@ -58,11 +58,13 @@ public class StartAppTest {
 		MobileElement el1 = (MobileElement) driver.findElementById("slideNavButton");
 		el1.click();
 	        driver.label("Menu button is tapping");
-		
-		 Thread.sleep(5000);
+		 Thread.sleep(2000);
 	     MobileElement el2 = (MobileElement) driver.findElementById("winningNumberSlide");
 	     el2.click();
-		Thread.sleep(7000);
+	     Thread.sleep(2000);
+	     MobileElement el3 = (MobileElement) driver.findElementById("headerBackButton");
+	     el3.click();
+	     Thread.sleep(7000);
 	}
 
 	@After
