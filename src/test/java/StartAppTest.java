@@ -64,6 +64,7 @@ public class StartAppTest {
 	     Thread.sleep(2000);
 	     MobileElement el3 = (MobileElement) driver.findElementById("headerBackButton");
 	     el3.click();
+		driver.label("Menu button is tapping again");
 	     Thread.sleep(7000);
 	}
 
