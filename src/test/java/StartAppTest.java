@@ -63,6 +63,9 @@ public class StartAppTest {
 		Thread.sleep(5000);
 		//		WebDriverWait wait=new WebDriverWait(driver, 70);
 		//		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.id("slideNavButton")));
+		MobileElement el11 = (MobileElement) driver.findElementById("Allow");
+		el11.click();
+		Thread.sleep(2000);
 		MobileElement el1 = (MobileElement) driver.findElementById("slideNavButton");
 		el1.click();
 	        driver.label("Menu button is tapping");
